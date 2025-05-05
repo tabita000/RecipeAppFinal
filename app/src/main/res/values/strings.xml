@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">RecipeAppFinal</string>
+    <string name="my_favorite_foods">My Recipe App</string>
+    <string name="recipe_name">Recipe Name</string>
+    <string name="back">Back</string>
+</resources>
