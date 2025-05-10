@@ -3,4 +3,7 @@
     <string name="my_favorite_foods">My Recipe App</string>
     <string name="recipe_name">Recipe Name</string>
     <string name="back">Back</string>
+    <string name="ingredients_title">Ingredients</string>
+    <string name="steps_title">Steps</string>
+
 </resources>
