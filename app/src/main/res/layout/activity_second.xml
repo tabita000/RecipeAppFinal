@@ -54,40 +54,70 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/titleIngredients"
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/ingredients_title"
-                android:textStyle="bold"
-                android:textSize="18sp"
-                android:layout_marginBottom="4dp" />
+                android:orientation="vertical"
+                android:padding="16dp">
 
-            <TextView
-                android:id="@+id/textIngredients"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text=""
-                android:textSize="16sp"
-                android:layout_marginBottom="12dp" />
+                <TextView
+                    android:id="@+id/textIngredientsTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ingredients_title"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="12dp" />
 
-            <TextView
-                android:id="@+id/titleSteps"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/steps_title"
-                android:textStyle="bold"
-                android:textSize="18sp"
-                android:layout_marginBottom="4dp" />
+                <TextView
+                    android:id="@+id/textIngredients"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="24dp" />
 
-            <TextView
-                android:id="@+id/textSteps"
+                <TextView
+                    android:id="@+id/textStepsTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/steps_title"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="12dp" />
+
+                <TextView
+                    android:id="@+id/textSteps"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/buttonNext"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text=""
-                android:textSize="16sp" />
+                android:text="@string/next"
+                android:layout_gravity="center"
+                android:layout_marginTop="32dp"
+                android:backgroundTint="#4A3190"
+                android:textColor="@android:color/white"/>
+
+            <!--
+    Originally, I put the "Next" button inside the same LinearLayout as the ingredients and steps,
+    but it looked too close to the text.
+
+    Then I moved the button outside the LinearLayout, directly under the ScrollView,
+    but that caused an error: "ScrollView can host only one direct child."
+
+    To fix this, I created a new vertical LinearLayout as the only child of the ScrollView,
+    and placed all my views—including the button—inside that layout.
+
+    Now the layout scrolls properly and the button appears nicely spaced at the bottom.
+    -->
+
 
         </LinearLayout>
+
     </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -5,5 +5,14 @@
     <string name="back">Back</string>
     <string name="ingredients_title">Ingredients</string>
     <string name="steps_title">Steps</string>
+    <string name="next">Next</string>
 
+    <string name="back_btn_third">Back</string>
+    <string name="liked_recipe">How much did you like the recipe?</string>
+    <string name="loved_recipe">Loved it</string>
+    <string name="okay_recipe">It was okay</string>
+    <string name="not_for_me_recipe">Not for me</string>
+    <string name="make_again">Would you make this again?</string>
+    <string name="leave_comment">Leave a comment</string>
+    <string name="submit_response">Submit</string>
 </resources>

@@ -1,6 +1,7 @@
 package com.example.recipeappfinal
 
 import android.annotation.SuppressLint
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageView
@@ -26,6 +27,13 @@ class SecondActivity : AppCompatActivity() {
         backButton.setOnClickListener {
             finish() //GO BACK TO PREVI SCRN
         }
+
+        val buttonNext = findViewById<Button>(R.id.buttonNext)
+        buttonNext.setOnClickListener {
+            val intent = Intent(this, ThirdActivity::class.java)
+            startActivity(intent) //GO TO thirdActivity
+        }
+
 
 
         textView.text = recipeName
